@@ -52,7 +52,7 @@ const HeroBanner = () => {
           fontSize: "200px",
         }}
       >
-        Exercise
+        GYMGENIUS
       </Typography>
       <img
         src={HeroBannerImage}
