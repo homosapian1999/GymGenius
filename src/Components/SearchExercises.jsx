@@ -27,10 +27,10 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
       );
       const searchedExercises = exercisesData.filter(
         (exercise) =>
-          exercise.name.toLowerCase.includes(search) ||
-          exercise.target.toLowerCase.includes(search) ||
-          exercise.bodyPart.toLowerCase.includes(search) ||
-          exercise.equipment.toLowerCase.includes(search)
+          exercise.name.toLowerCase().includes(search) ||
+          exercise.target.toLowerCase().includes(search) ||
+          exercise.bodyPart.toLowerCase().includes(search) ||
+          exercise.equipment.toLowerCase().includes(search)
       );
       setSearch("");
       setExercises(searchedExercises);
@@ -58,7 +58,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
           }}
           value={search}
           onChange={(e) => setSearch(e.target.value.toLowerCase())}
-          placeholder="Search Exercises"
+          placeholder="Enter exercise,equiment or body Part"
           type="text"
         />
         <Button
